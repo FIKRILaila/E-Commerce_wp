@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'i?V1Nghu%AjM>},t5>L)4q2=+Z6GfmK>HqagnK&f/!FVg)}s[-ukE*)o[B<2I,:v' );
-define( 'SECURE_AUTH_KEY',  'xR)c;7O;7p@(!Z&xdGUF+`gGeps5<#2V>2u?0SO4UT|gBD{nU&9y4<oa$xWD;TvW' );
-define( 'LOGGED_IN_KEY',    'i#XN*yoURE=18mK|bS[VKx!<(`BWeA4)`WOfQ:~4GpSGe[4r_ziCOYnCff|(U/pm' );
-define( 'NONCE_KEY',        'xMeVljY529?V![I@/ID@m_Tdsg-g}CNRM.5{&K7T%#0UqfNPnN|/c~+9aZ}T<AFB' );
-define( 'AUTH_SALT',        '.8/FL/xHsg,10xfk,ml-M^~VaSz13(|bMk*klNtPbYb,Gtq4$-&|X9L$8FLg1.L,' );
-define( 'SECURE_AUTH_SALT', '2R@ =~v<BO.b6$`O]g:G:T_nm_.1xj=Hvfu765f53_+F!p^NK=TNdfb-:JO6c61f' );
-define( 'LOGGED_IN_SALT',   ' 9e|!L|68$(u>Hjk8:RR4Gv$[Vv?m@)fdBpqr8cHww{t<FGOSYlN4ZSy^?[k~?!O' );
-define( 'NONCE_SALT',       '?x2LU@a<R50q4e&SV]]%Su] F.L|w5, z-^~x4lUp[YThcxS(jXpP}]N+e%>1X4R' );
+define( 'AUTH_KEY',         'y^)9hMBcP0baHVb=5Z&dbbL|G0!duE7m/@dzS UY<{^7FH&4fYCdiMJqnT Hiek]' );
+define( 'SECURE_AUTH_KEY',  'Yq%s<br<tkE>J!;M3&v[F?TP#gv!uXTBn7X]*[AoG #?=t<9|_YEQ0-il+fXJIRg' );
+define( 'LOGGED_IN_KEY',    '2,$Ea,fk!E$-Cj@&`XNCHAqJ*{a,ol)oxfPswU?ObfOPm/JSC$|aPbFFqe?j2PO-' );
+define( 'NONCE_KEY',        'B<(=67g6 4q<&Gv5(P@v6Sa:=,p>=Xhx9mS(pOa!q8~[*izkl/=9*{4MOu4>sA_3' );
+define( 'AUTH_SALT',        '~<qX}$n0SRFn{7;U9)X&DTa/f<6oiNg@[;ZLV%iZ@vm4vqpgJqTOI(]rGjPE?cL}' );
+define( 'SECURE_AUTH_SALT', '@!4zXHnwhF!sIT]HCYa|TwVNb-1V`FJ?9cT 3S;oVG<0,TtU(Nj~N_PsnR|7tVuu' );
+define( 'LOGGED_IN_SALT',   'zCe(g66n7Udef}]g(oJv*Eu8R^v<,<9NZ{C^h$UBIV8AMW5-OqhV>KmnQa]g})mE' );
+define( 'NONCE_SALT',       'x{|b|(3&:xi`j9,/3fkIcwckYhH3r>^mO2aP]DYk[(VB2?F6Fp2)XicX{E.E4QPs' );
 
 /**#@-*/
 
@@ -78,12 +78,16 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
+define('WP_ALLOW_MULTISITE', true);
 define('MULTISITE', true);
 define('SUBDOMAIN_INSTALL', false);
 define('DOMAIN_CURRENT_SITE', 'localhost');
 define('PATH_CURRENT_SITE', '/e-commerce_wp/');
 define('SITE_ID_CURRENT_SITE', 1);
-define('BLOG_ID_CURRENT_SITE', 1);/* That's all, stop editing! Happy publishing. */
+define('BLOG_ID_CURRENT_SITE', 1);
+
+
+/* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
